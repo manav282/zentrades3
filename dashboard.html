@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="company-metrics">
+    <div class="row">
+        <div class="metric">
+            <h2>Total Revenue</h2>
+            <p id="totalRevenue">Loading...</p>
+        </div>
+        <div class="metric">
+            <h2>Total Jobs Average</h2>
+            <p id="totalJobsAverage">Loading...</p>
+        </div>
+        <div class="metric">
+            <h2>Tickets Created</h2>
+            <p id="ticketsCreated">Loading...</p>
+        </div>
+        <div class="metric">
+            <h2>Tickets Scheduled</h2>
+            <p id="ticketsScheduled">Loading...</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="metric">
+            <h2>Outstanding Amount</h2>
+            <p id="outstandingAmount">Loading...</p>
+        </div>
+        <div class="metric">
+            <h2>Memberships Sold</h2>
+            <p id="membershipsSold">Loading...</p>
+        </div>
+        <div class="metric">
+            <h2>Jobs Completed</h2>
+            <p id="jobsCompleted">Loading...</p>
+        </div>
+        <div class="metric">
+            <h2>Total Canceled</h2>
+            <p id="totalCanceled">Loading...</p>
+        </div>
+    </div>
+</div>
+
+<div class="charts-section">
+    <div class="bar-chart" id="revenueByLocationChart"></div>
+    <div class="bar-chart" id="revenueByJobTypeChart"></div>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="dashboard.js"></script>
+
+</body>
+</html>
